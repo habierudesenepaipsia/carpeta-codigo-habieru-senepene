@@ -9,3 +9,5 @@ if numero == 1:
     print("💀 Fuiste bueno... te tocó el castigo!")
 else:
     print("😎 Te salvaste esta vez.")
+ffsfasjdhak
+#sudo :v  ssgsgsgafasfsafasfa
