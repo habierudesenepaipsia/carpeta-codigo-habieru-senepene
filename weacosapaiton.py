@@ -1,0 +1,1 @@
+print (str (input ("no voy a josear en clase")))
