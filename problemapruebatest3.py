@@ -50,3 +50,25 @@ else:
         numberlowest3 = number1
 
 print(f"El orden de los números es el siguiente:{numberlowest1},{numberlowest2},{numberlowest3}")
+
+num1 = int(input("Ingrese el primer numero :"))
+num2 = int(input("Ingrese el primer numero :"))
+num3 = int(input("Ingrese el primer numero :"))
+
+if num1 > num2:
+    print("el numero en orden es ", num1, num2, num3)
+else:
+    if num1 > num3:
+        print("el orden de mayor a menor es ", num1, num3, num2)
+    else:
+        if num2 > num1:
+            print("el orden de mayor a menor es: ", num2, num1, num3)
+        else:
+            if num2 > num3:
+                print("el orden es ", num2, num3, num1)
+            else:
+                if num3 > num1:
+                    print("el orden es ", num3, num1, num2)
+                else:
+                    print("el orden es ", num3, num2, num1)
+        
