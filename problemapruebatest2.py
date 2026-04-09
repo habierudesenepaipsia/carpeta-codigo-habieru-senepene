@@ -12,3 +12,4 @@ else:
         print (f"el numero mayor es:{num_3}")
     else:
         print (f"el numero mayor es:{num_2}")       
+#me costó más que la puta esta wea pero en resumen no puedo usar más de un comparador por linea en un If, no lo agarra, hay que hacer cadenas de if con la información comparada        

@@ -11,3 +11,5 @@ else:
     bonototal_2 = totalsillasdesc * 140
     bonocompleto = bonototal_1 + bonototal_2
     print(f"su bono total serian:{bonocompleto}")
+#ta bien esta wea pero es específica, es mejor hacer variables uno por uno y preguntarlas uno por uno, de manera en que
+#al final solo quede un if con los cálculos enteros y en el else solo quede un calculo pelado
