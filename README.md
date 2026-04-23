@@ -1,5 +1,1 @@
-que fai con el pepe sech aca van toas mis weas y caga y lo que sea lol
-pene
-print ("hola pepe sech pene pene tengo 15 años xtmre")
-*la wea retrasada*
-dsdsdsdsdsddadsd
+estem ultima clase kla que tuve es el 23 de abril del añoña 2026 después de cristo en el calendario gregoriano.
