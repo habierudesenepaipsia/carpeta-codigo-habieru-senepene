@@ -45,3 +45,4 @@ else:
             numlist3 = -num3
             print(f"su tercer número es;{numlist3}")     
 #profe no me mate            
+print("NO VOY A JOSEAR EN CLASE")

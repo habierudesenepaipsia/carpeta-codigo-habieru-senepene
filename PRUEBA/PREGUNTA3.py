@@ -6,8 +6,8 @@ peso = int(input("Ingrese su peso:"))
 imc = peso / (estatura ** 2)
 #imc listo
 if imc < 25:
-    print(f"su peso es{imc:.2f}, su peso es normal") 
+    print(f"su peso es {imc:.2f}, su peso es normal") 
 #es flaco y normal
 else:
-    print(f"su peso es{imc:.2f}, usted sufre sobrepeso")    
+    print(f"su peso es {imc:.2f}, usted sufre sobrepeso")    
 #sufre obesidad
