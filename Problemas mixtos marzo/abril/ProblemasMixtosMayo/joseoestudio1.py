@@ -5,8 +5,16 @@ class Celular:
         self.__precio = precio
 
     def mostrar_info(self):
-        print("Celular: {self.marca} {self.modelo} - precio: ${self.__precio}")
+        print(f"Celular: {self.marca} {self.modelo} - precio: ${self.__precio}")
 
 celu1 = Celular("Huawei", "SXI", 1200)
 celu2 = Celular("Samsung", "SIII", 600)      
 
+vitrina = []
+
+
+vitrina.append(celu1)
+vitrina.append(celu2)
+
+for c in vitrina:
+    c.mostrar_info() 
