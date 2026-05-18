@@ -1,0 +1,2 @@
+#Desarrolle una función que reciba un numero como argumento y retorne el 1er dígito de ese número, la función debe validar que el número recibido sea positivo y menor a cien mil,
+#de lo contrario retorna un cero que el argumento no cumple con las restricciones
