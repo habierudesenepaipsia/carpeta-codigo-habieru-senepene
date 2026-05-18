@@ -1,4 +1,4 @@
-#investigar lenguajes interpretados y compilados, lenguajes altamente tipados y no tipados   
+#haga una funcion que devuelva un numero primo
 def esprimo (numero):
     cont = 0
     for x in range (1, numero + 1, 1):
@@ -10,32 +10,7 @@ def esprimo (numero):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
