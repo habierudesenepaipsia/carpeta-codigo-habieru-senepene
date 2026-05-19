@@ -16,3 +16,5 @@
 #paso7:poner un print fuera de la definicion que arroje el número inicial ingresado y que en comparación arroje el siguiente número encontrado
 #paso8:
 #paso9:
+
+
