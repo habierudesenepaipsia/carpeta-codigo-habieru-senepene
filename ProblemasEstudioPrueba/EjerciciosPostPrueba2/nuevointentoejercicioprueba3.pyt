@@ -6,16 +6,39 @@
 
 #paso1: Definir la función como tal, con que reciba un número
 #paso1,5: Declarar cada variable a usar minuciosamente de manere que luego el código no muera
-#paso2: iniciar un ciclo con inicio con el número ingresado y que finalize con una variable que se configure dentro del ciclo
-#       y que represente el siguiente número primo
-#paso3:definir un if que divida el número ingresado por una variable que aumente desde 1 por cada ciclo, y que al terminar
-#       la division, guarde en otra variable la cantidad de divisores en total.
-#paso4: hacer un comparador del divisor, de manera que se guarde en otra variable si la cantidad de divisores es 2
-#paso5: asegurarse de que el ciclo se repita con cada condicional ciclada limpia
-#paso6:hacer una nueva variable que aumente el numero inicial del ciclo en uno, hasta que se cumpla la variable anterior de 2 divisores,
-#          de manera que se encuentre en un número siguente al número inicial
-#paso7:poner un print fuera de la definicion que arroje el número inicial ingresado y que en comparación arroje el siguiente número encontrado
+#paso2: 
+#
+#paso3:
+#       
+#paso4: 
+#paso5: 
+#paso6:
+
+#paso7:
+
 #paso8:
 #paso9:
 
 
+def fubcioc(numingresprim):
+    signumprim = 0
+    numprimociclo = 0
+    numprimfound = False
+    nunmadhaf = numingresprim
+    while numprimfound == False:
+        numprimociclo = 1
+        while numprimociclo <= nunmadhaf: 
+            if nunmadhaf % numprimociclo == 0:
+                signumprim = signumprim + 1
+            numprimociclo = numprimociclo + 1
+        if signumprim == 2 and numingresprim < nunmadhaf:
+            numprimfound = True
+            return nunmadhaf
+        signumprim = 0
+        nunmadhaf = nunmadhaf + 1
+       
+
+rtest = int(input("Ingrese su número:"))
+
+resultado = fubcioc(rtest)
+print(f"El siguiente número primo a {rtest} es {resultado}.")
