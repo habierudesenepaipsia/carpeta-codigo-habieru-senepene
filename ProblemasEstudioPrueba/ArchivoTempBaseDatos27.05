@@ -1,0 +1,49 @@
+Introduzca el nombre de usuario: system
+Introduzca la contrase±a:
+Hora de ┌ltima Conexi¾n Correcta: Lun Feb 09 2026 10:05:27 -04:00
+
+Conectado a:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> create table Administrador_Capacitacion (Cacapacitacion number(6), Carut varchar2(13 byte), Cacurso number(6), Cafecini date, Cafecfin date);
+
+Tabla creada.
+
+SQL> create table Administrador_Curso (Crcodigo Number(6), Crnombre Varchar2(50), Crlugar Varchar2(50), Crhrs Number(4), Crcosto Number(7));
+
+Tabla creada.
+
+SQL> create table Administrador_Personal (Psrut Varchar2(13), Psnombre Varchar2(50), Psrenta Number(7), Psafp Varchar2(4));
+
+Tabla creada.
+
+SQL> create table Administrador_Afp (Afcodigo Varchar2(4), Afnombre Varchar2(50), Afporce Number(4,2));
+
+Tabla creada.
+
+SQL> alter table Administrador_Capacitacion add constraint Pk_Capacitacion primary key (Cacapacitacion);
+
+Tabla modificada.
+
+SQL> alter table Administrador_Curso add constraint Pk_Curso primary key (Crcodigo);
+
+Tabla modificada.
+
+SQL> alter table Administrador_Personal add constraint Pk_Personal primary key (Psrut);
+
+Tabla modificada.
+
+SQL> alter table Administrador_Afp add constraint Pk_Afp primary key (Afcodigo);
+
+Tabla modificada.
+
+SQL> alter table Administrador_Capacitacion add constraint Fk_Capacitacion_Carut foreign key (Carut) references Administrador_Personal (Psrut);
+
+Tabla modificada.
+
+SQL> alter table Administrador_Capacitacion add constraint Fk_Capacitacion_Cacurso foreign key (Cacurso) references Administrador_Curso (Crcodigo);
+
+Tabla modificada.
+
+SQL> alter table Administrador_Personal add constraint Fk_Personal_Psafp foreign key (Psafp) references Administrador_Afp (Afcodigo);
