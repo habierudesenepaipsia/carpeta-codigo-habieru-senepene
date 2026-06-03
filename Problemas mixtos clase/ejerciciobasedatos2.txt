@@ -1,0 +1,130 @@
+Microsoft Windows [Versión 10.0.22631.6783]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\alumnos09>sql
+Error: no se ha encontrado o cargado la clase principal oracle.dbtools.raptor.scriptrunner.cmdline.SqlCli
+
+C:\Users\alumnos09>sql+
+"sql+" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\alumnos09>sqlplus
+
+SQL*Plus: Release 21.0.0.0.0 - Production on MiÚ Jun 3 16:27:29 2026
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+Introduzca el nombre de usuario: system
+Introduzca la contrase±a:
+Hora de ┌ltima Conexi¾n Correcta: Lun Feb 09 2026 10:05:27 -04:00
+
+Conectado a:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> create table marcas
+  2
+SQL>
+SQL> create table marcas (MRID Number(4), MRMARCA(25));
+create table marcas (MRID Number(4), MRMARCA(25))
+                                            *
+ERROR en lÝnea 1:
+ORA-00902: tipo de dato no vßlido
+
+
+SQL> create table marcas (MRID Number(4), MRMARCA (25));
+create table marcas (MRID Number(4), MRMARCA (25))
+                                             *
+ERROR en lÝnea 1:
+ORA-00902: tipo de dato no vßlido
+
+
+SQL> create table marcas (MRID Number(4), MRMARCA VARCHAR2(25));
+
+Tabla creada.
+
+SQL> create table pulloa.modelos (MDID Number(4), MDMODELO VARCHAR2(25), MDMARCA NUMBER(4), MDPRECIO NUMBER(9));
+create table pulloa.modelos (MDID Number(4), MDMODELO VARCHAR2(25), MDMARCA NUMBER(4), MDPRECIO NUMBER(9))
+*
+ERROR en lÝnea 1:
+ORA-01918: el usuario 'PULLOA' no existe
+
+
+SQL> create table PULLOA.MARCAS (MRID Number(4), MRMARCA VARCHAR2(25));
+create table PULLOA.MARCAS (MRID Number(4), MRMARCA VARCHAR2(25))
+*
+ERROR en lÝnea 1:
+ORA-01918: el usuario 'PULLOA' no existe
+
+
+SQL> create table pulloa.modelos (MDID Number(4), MDMODELO VARCHAR2(25), MDMARCA NUMBER(4), MDPRECIO NUMBER(9));
+create table pulloa.modelos (MDID Number(4), MDMODELO VARCHAR2(25), MDMARCA NUMBER(4), MDPRECIO NUMBER(9))
+*
+ERROR en lÝnea 1:
+ORA-01918: el usuario 'PULLOA' no existe
+
+
+SQL>
+SQL> create table modelos (MDID Number(4), MDMODELO VARCHAR2(25), MDMARCA NUMBER(4), MDPRECIO NUMBER(9));
+
+Tabla creada.
+
+SQL> create table inventario (INFOLIO NUMBER(4), INFECHA DATE, INMODELO NUMBER(4), INENTRADA NUMBER(4), INSALIDA NUMBER(4));
+
+Tabla creada.
+
+SQL> alter table marcas add constraint PK_MARCAS primary key (MRID);
+
+Tabla modificada.
+
+SQL> alter table modelos add constraint PK_MODELOS primary key (MDID);
+
+Tabla modificada.
+
+SQL> alter table inventario add constraint PK_INVENTARIO primary key (INFOLIO);
+
+Tabla modificada.
+
+SQL> alter table marcas add constraint FK_MODELOS foreign key (MDMARCA);
+alter table marcas add constraint FK_MODELOS foreign key (MDMARCA)
+                                                                 *
+ERROR en lÝnea 1:
+ORA-00905: falta una palabra clave
+
+
+SQL> alter table modelos add constraint FK_MODELOS foreign key (MDMARCA) references marcas (MRID);
+
+Tabla modificada.
+
+SQL> alter table inventarios add constraint FK_INVENTARIO foreign key (INMODELO) references modelos (MDID);
+alter table inventarios add constraint FK_INVENTARIO foreign key (INMODELO) references modelos (MDID)
+*
+ERROR en lÝnea 1:
+ORA-00942: la tabla o vista no existe
+
+
+SQL> alter table inventario add constraint FK_INVENTARIO foreign key (INMODELO) references modelos (MDID);
+
+Tabla modificada.
+
+SQL> show table inventario
+SP2-0158: opci¾n SHOW desconocida "table"
+SP2-0158: opci¾n SHOW desconocida "inventario"
+SQL> sort table inventario
+SP2-0734: inicio "sort table..." de comando desconocido - resto de la lÝnea ignorado.
+SQL> desc marcas
+ Nombre                                    ┐Nulo?   Tipo
+ ----------------------------------------- -------- ----------------------------
+ MRID                                      NOT NULL NUMBER(4)
+ MRMARCA                                            VARCHAR2(25)
+
+SQL> desc modelos
+ Nombre                                    ┐Nulo?   Tipo
+ ----------------------------------------- -------- ----------------------------
+ MDID                                      NOT NULL NUMBER(4)
+ MDMODELO                                           VARCHAR2(25)
+ MDMARCA                                            NUMBER(4)
+ MDPRECIO                                           NUMBER(9)
+
+SQL>
