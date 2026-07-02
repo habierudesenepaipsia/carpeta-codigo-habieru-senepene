@@ -33,3 +33,8 @@ while seriefinvalor < serievalor:
 
     seriefinvalor = seriefinvalor + 1    
     i1 = i1 + 1
+
+
+
+
+    #############NO LOGRE TERMINARLO###########
