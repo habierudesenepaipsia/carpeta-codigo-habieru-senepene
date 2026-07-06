@@ -60,3 +60,27 @@ while impar <= serie:
    impar = impar + 4
    par = par + 4
 
+####################variante$$$$$$$$$$$$$$
+
+import random
+
+
+for x in range(100):
+   impar = 1
+   par = 2
+   #serie = int(input("Ing. número :"))
+   serie = random.randint(5, 200)
+   print("El ususario quiere la serie hasta el ", serie)
+
+   while impar <= serie: 
+
+      if impar <= serie:
+         print("(", impar , "," , (impar + 2), ")")
+
+      if par <  serie - 1:
+         print("(", par , "," , (par + 2), ")")
+
+      impar = impar + 4
+      par = par + 4
+
+
