@@ -38,3 +38,25 @@ while seriefinvalor < serievalor:
 
 
     #############NO LOGRE TERMINARLO###########
+
+
+
+
+    ####VERSION ARREGLADA POST CLASE##########
+
+impar = 1
+par = 2
+
+serie = int(input("Ing. número :"))
+
+while impar <= serie: 
+
+   if impar <= serie:
+      print("(", impar , "," , (impar + 2), ")")
+
+   if par <  serie - 1:
+      print("(", par , "," , (par + 2), ")")
+
+   impar = impar + 4
+   par = par + 4
+
