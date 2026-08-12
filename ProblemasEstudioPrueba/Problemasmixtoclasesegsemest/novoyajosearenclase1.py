@@ -15,8 +15,3 @@ numeroing = int(input("Ingrese el siguiente número:"))
 
 
 if numeroing == 999:
-    
-
-
-
-
