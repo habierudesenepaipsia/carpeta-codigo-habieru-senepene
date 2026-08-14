@@ -6,4 +6,5 @@
 #los atributos son todas las cosas que diferencian a los objetos, por ej altura
 #los metodos son las acciones que tienen los objetos, los verbos diferentes que tienen, como los kilometros de un auto  
 ##################TAREATAREATAREA###############################
-#identificar 20 objetos; cada objeto al menos 10 atributos y 5 metodos, prohibido los objetos persona y auto (porque ya los dije[el profe{PUTALAWEA}])
+#identificar 20 objetos; cada objeto al menos 10 atributos y 5 metodos, prohibido los objetos persona y auto
+#  (porque ya los dije[el profe{PUTALAWEA}])
