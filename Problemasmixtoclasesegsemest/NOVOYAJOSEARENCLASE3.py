@@ -6,7 +6,7 @@
 #get       -Marca            :str
 #get       -Almacenamiento   :float
 #set       -Nivel_Bateria    :float
-#get       -Sis_Op           :str
+#get       +Sis_Op           :str
 
 #Métodos                      Tipo
  
@@ -29,3 +29,48 @@ class Celular:
     #_publico
     def __init__(self, imei): # Indica que es un argumento necesario para instanciar el objeto 
         self.__imei = imei
+        self.__marca = ""
+        self.__numero = None        
+        self.__almacenamiento = 0.0
+        self.__nivelbateria = 0.0
+        self.__sisop = ""       
+        self.so = "Android"
+
+    #Getter
+    @property
+    def numero(self):
+        self.__numero
+
+
+
+celu_abdala = Celular(123456789)
+celu_abdala.numero = 11111111
+
+
+
+print(celu_abdala.numero)
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
