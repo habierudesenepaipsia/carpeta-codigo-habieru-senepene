@@ -39,13 +39,26 @@ class Celular:
     #Getter
     @property
     def numero(self):
-        self.__numero
+        return self.__numero
+
+    #Setter
+    @numero.setter
+    def numero(self, nuevo_numero):
+        if len(nuevo_numero) >= 5:
+            self.__numero = nuevo_numero
+        else:
+            self.__numero = None
 
 
+#Instaciar una clase para crear un objeto
 
 celu_abdala = Celular(123456789)
-celu_abdala.numero = 11111111
-
+celu_abdala.numero = "+569666666"
+print("Número " , celu_abdala.numero)
+celu_abdala.numero = "66"
+print("Número " , celu_abdala.numero)
+celu_abdala.so = "MAC"
+print("OS", celu_abdala.os)
 
 
 print(celu_abdala.numero)
