@@ -1,4 +1,4 @@
-class salondebaile:
+class Salondebaile:
     def init(self,numsalon):
         self._numsalon= numsalon
         self._horario= 0.0
@@ -24,27 +24,38 @@ class salondebaile:
 
 
 
-class claseinformatica:
-    def init(self,numsalon):
-        self.horarios=0.0
-        self.profesor=int
-        self.siglacurs=""
-        self.alumn=""
-        self.equipos={}
+class Informatica:
+    def init(self,numsala):
+        self._numsala= numsala
+        self._horarios=0.0
+        self._profesor=int
+        self._siglacurs=""
+        self._alumn=""
+        self._equiposinform={}
+
+    @property
+    def profesor(self, otro_profesor):
+        if self._profesor == 0:
+            self._profesor = otro_profesor
+        else:
+            self.profesor = None     
 
 
 
 
 
-
-
-
-class iglesia:
+class Iglesia:
     def init(self,religion):
-        self.pastors={}
-        self.hermans={}
-        self.horarsermons=0.0
-        self.capasiento=int
-        self.disposaudio={}
+        self._religion= religion
+        self._pastors={}
+        self._hermans={}
+        self._horarsermons=0.0
+        self._capasiento=int
+        self.__disposaudio={}
 
-
+    @property
+    def capasiento(self, max_capa):
+        if self._capasiento > 250:
+            self._capasiento = max_capa
+        else:
+            self._capasiento = ""
