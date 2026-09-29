@@ -6,3 +6,4 @@ if ssmgy == "si si me gusta ya":
         ea = input("ya, como te los pegai?:")
         if ea == "en puro antenazo":
             print("ya pero lo pasai por plata?")
+            print("soy gay")
