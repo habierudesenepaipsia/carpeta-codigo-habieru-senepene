@@ -328,7 +328,7 @@ class Cliente(Persona):
 
    @giro.setter
    def giro(self, giro: str):
-      self.__giro = giro 
+        self.__giro = giro 
 
    def agregar_tc(self,tc_nueva: TarjetaCredito):
       existe = False
