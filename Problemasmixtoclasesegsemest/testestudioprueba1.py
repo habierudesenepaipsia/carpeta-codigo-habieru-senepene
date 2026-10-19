@@ -82,7 +82,7 @@ class Persona(Cliente):
     def direccionParticular (self, ingresarDireccionParticular):
         self.direccionParticular = ingresarDireccionParticular
 
-class 
+class Telefono:
 
 
-####ESTO ES PARA QUE EL SANTO DEL CRSDIAN ME AYUDE :(((####
+####pepe:(((####
