@@ -1,6 +1,6 @@
-class Vehiculo:
-    def __init__(self, patente: str,  ):
-        self.__patente: ""
+class VehiculoElectrico:
+    def __init__(self, codigo: str, bateria: float, tarifaBase ):
+        self.__: ""
         
 
 
@@ -8,7 +8,7 @@ class Vehiculo:
     @property
     def     
 
-    @patente.setter
+    @.setter
     def 
 
 
