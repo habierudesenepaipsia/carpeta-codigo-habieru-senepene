@@ -21,3 +21,8 @@
 #1. Diagrama de clases.
 #2. Diagramas casos de uso.
 #3. Programación el Python del diagrama de clases
+
+
+
+
+ndea
