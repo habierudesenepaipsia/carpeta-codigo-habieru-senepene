@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 URL_MED = "https://wsearch.nlm.nih.gov/ws/query"
 
 def clean(text):
-    # Strip leftover HTML tags and tidy whitespace
+
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text or "")).strip()
 
 def search_condition(term, lang_db="healthTopics", max_results=3):
@@ -23,7 +23,7 @@ def search_condition(term, lang_db="healthTopics", max_results=3):
         "db": lang_db,
         "term": term,
         "retmax": max_results,
-        "tool": "my_school_project",   # recommended by NLM
+        "tool": "project"
     }
     resp = requests.get(URL_MED, params=params, timeout=5)
     resp.raise_for_status()
