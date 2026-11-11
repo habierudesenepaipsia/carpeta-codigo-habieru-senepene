@@ -28,7 +28,9 @@ for la_pregunta in preguntas:
 #cuáles son los síntomas y los tratamientos de aquella enfermedad
 
 #? https://med-api.com/
-
+#? https://medlineplus.gov/about/developers/webservices/
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#https://wsearch.nlm.nih.gov/ws/query
                                             #TAREA2#
 
 
