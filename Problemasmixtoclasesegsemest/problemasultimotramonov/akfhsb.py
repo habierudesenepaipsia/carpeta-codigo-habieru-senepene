@@ -27,9 +27,13 @@ for la_pregunta in preguntas:
 # ie: "síndrome de tourette", y que entregue
 #cuáles son los síntomas y los tratamientos de aquella enfermedad
 
+#? https://med-api.com/
+
                                             #TAREA2#
 
 
 #usando cualquiera de las 2 (dogapi o catapi), consumir 
 # (mostrar todos los datos de una raza de animal específica, junto con la foto),
 #
+
+#https://thecatapi.com/en
